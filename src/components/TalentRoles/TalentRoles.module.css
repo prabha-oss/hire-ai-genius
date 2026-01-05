@@ -1,0 +1,186 @@
+.talentRoles {
+    padding: var(--spacing-section) 0;
+    background: white;
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+}
+
+.sectionHeader h2 {
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: var(--spacing-sm);
+}
+
+.sectionHeader p {
+    font-size: var(--font-size-body);
+    color: var(--color-text-muted);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.rolesGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.roleCard {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 28px;
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-normal);
+}
+
+.roleCard:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-accent-start);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.roleIcon {
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, rgba(0, 102, 255, 0.1), rgba(0, 212, 255, 0.1));
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.roleTitle {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.roleDescription {
+    font-size: 14px;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.projectsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.projectTag {
+    font-size: 12px;
+    padding: 5px 12px;
+    background: var(--color-background);
+    border-radius: var(--radius-full);
+    color: var(--color-text-muted);
+}
+
+.viewLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-accent-start);
+    margin-top: 16px;
+    transition: gap var(--transition-fast);
+}
+
+.viewLink:hover {
+    gap: 10px;
+}
+
+/* Dark CTA Banner */
+.vettingBanner {
+    background: var(--color-primary);
+    border-radius: var(--radius-xl);
+    padding: 48px 64px;
+    text-align: center;
+}
+
+.vettingBanner h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.vettingPoints {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.vettingPoint {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+}
+
+.vettingPoint .check {
+    color: var(--color-success);
+    font-weight: 700;
+}
+
+.bannerCta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    background: white;
+    color: var(--color-primary);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    transition: all var(--transition-normal);
+}
+
+.bannerCta:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 968px) {
+    .rolesGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vettingBanner {
+        padding: 40px 32px;
+    }
+
+    .vettingPoints {
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .rolesGrid {
+        grid-template-columns: 1fr;
+    }
+}

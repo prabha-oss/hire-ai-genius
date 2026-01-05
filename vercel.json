@@ -1,0 +1,8 @@
+{
+    "framework": "nextjs",
+    "buildCommand": "next build",
+    "devCommand": "next dev",
+    "outputDirectory": ".next",
+    "installCommand": "npm install",
+    "ignoreCommand": "git diff HEAD^ HEAD --quiet ./sanity-studio"
+}
